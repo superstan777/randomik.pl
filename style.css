@@ -1,0 +1,70 @@
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #e8e8e8;
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 70%;
+  max-height: 70%;
+  height: auto;
+  width: 350px;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .3s;
+  /* Animation */
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#image-container {
+  padding-top: 60px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#data-container {
+  padding: 50px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+}
+
+.button {
+  width: 10%;
+  background-color: white;
+  border: solid 2px black;
+  margin: 25px auto;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform .3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.button:hover {
+  transform: scale(1.15);
+  background-color: #c0c2c4;
+}
+
+#button:active {
+  background-color: grey
+}
